@@ -1,0 +1,11 @@
+		"generalPractitioner": [
+			{
+				"reference":"123456"
+			},
+			{
+				"reference":"987456"
+			}
+		]
+
+code : - ', '.join([x.get('reference') for x in raw.get('generalPractitioner')])
+result : - '123456, 987456'
